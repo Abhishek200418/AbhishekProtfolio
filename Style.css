@@ -35,7 +35,6 @@ nav a {
     text-decoration: none;
 }
 
-/* HERO */
 #Hero {
     display: flex;
     justify-content: space-between;
@@ -47,7 +46,6 @@ nav a {
     border-radius: 50%;
 }
 
-/* BUTTON */
 .cta-btn {
     background: #F97316;
     padding: 10px 20px;
@@ -56,9 +54,10 @@ nav a {
     text-decoration: none;
     display: inline-block;
     margin-top: 10px;
+    border: none;
+    cursor: pointer;
 }
 
-/* SKILLS */
 .skills-list {
     display: flex;
     justify-content: space-around;
@@ -66,7 +65,6 @@ nav a {
     padding: 20px;
 }
 
-/* PROJECTS */
 .projects-container {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -79,24 +77,11 @@ nav a {
     border-radius: 10px;
 }
 
-.project-card ul {
-    margin-top: 10px;
-    padding-left: 20px;
-}
-
-.project-card li {
-    font-size: 14px;
-    color: #CBD5F5;
-    margin-bottom: 5px;
-}
-
-/* CONTACT */
 .contact-details {
     text-align: center;
     margin-top: 20px;
 }
 
-/* MOBILE */
 @media(max-width:768px){
     #Hero{
         flex-direction: column;

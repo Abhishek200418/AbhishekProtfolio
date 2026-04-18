@@ -5,12 +5,12 @@
     <title>Valeti Abhishek Paul</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- FIXED ONLY THIS LINE -->
+    <link rel="stylesheet" href="./Style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header id="header">
     <div class="container">
         <h1 class="logo">Valeti Abhishek Paul</h1>
@@ -25,35 +25,39 @@
     </div>
 </header>
 
-<!-- HERO -->
 <section id="Hero">
     <div class="hero-left">
-        <p>Hello.</p>
+        <p class="intro">Hello.</p>
         <h2>I'm Abhishek</h2>
         <h3>AI & Data Science Student</h3>
 
-        <a class="cta-btn" href="#Contact">Get in Touch</a>
+        <div class="hero-buttons">
+            <a class="cta-btn" href="#Contact">Get in Touch</a>
+            <a class="cta-btn" target="_blank"
+               href="https://drive.google.com/file/d/1mknX6mJrse-gfV-G3Hh72gG_BUP07br_/view?usp=sharing">
+               See My Resume
+            </a>
+        </div>
     </div>
 
     <div class="hero-right">
-        <img src="Abhishek-removebg-preview.png" alt="Profile">
+        <img src="Abhishek-removebg-preview.png" alt="Profile Image">
     </div>
 </section>
 
-<!-- SKILLS -->
 <section id="Skills">
     <div class="skills-list">
         <span>HTML/CSS</span>
         <span>JavaScript</span>
         <span>React.js</span>
-        <span>Angular</span>
         <span>Java</span>
-        <span>Spring Boot</span>
+        <span>Spring</span>
+        <span>Hibernate</span>
+        <span>JDBC</span>
         <span>MySQL</span>
     </div>
 </section>
 
-<!-- ABOUT -->
 <section id="About">
     <div class="about-left">
         <h2>About Me</h2>
@@ -81,7 +85,7 @@
     </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- UPDATED PROJECTS -->
 <section id="Projects">
     <h2>Projects</h2>
 
@@ -89,61 +93,34 @@
 
         <div class="project-card">
             <h3>Airport & Runway Detection</h3>
-            <p>
-                Developed a YOLOv9-based deep learning model for detecting airports and runways from aerial imagery with <strong>91.3% accuracy</strong>.
-            </p>
-            <ul>
-                <li>Handled occlusion & angled bounding boxes</li>
-                <li>Improved detection in complex environments</li>
-                <li>Published in IEEE Conference</li>
-            </ul>
+            <p>Deep Learning model using YOLOv9 with 91.3% accuracy.</p>
         </div>
 
         <div class="project-card">
             <h3>Anti-Boredom Hub</h3>
-            <p>
-                Built a full-stack web application for managing daily activities and tasks.
-            </p>
-            <ul>
-                <li>Frontend using React.js</li>
-                <li>REST APIs with Spring Boot</li>
-                <li>MySQL database integration</li>
-                <li>Real-time UI updates</li>
-            </ul>
+            <p>Full stack application to manage activities, favorites and tasks.</p>
+            <button class="cta-btn source-btn">Source Code</button>
         </div>
 
         <div class="project-card">
             <h3>Bookmark Manager</h3>
-            <p>
-                Designed a full-stack system to organize and manage bookmarks efficiently.
-            </p>
-            <ul>
-                <li>Angular-based frontend</li>
-                <li>CRUD operations via REST APIs</li>
-                <li>MySQL database design</li>
-                <li>Smooth routing & navigation</li>
-            </ul>
+            <p>Angular-based bookmark system with CRUD operations.</p>
+            <button class="cta-btn source-btn">Source Code</button>
         </div>
 
         <div class="project-card">
             <h3>Hybrid Deep Learning Dehazing</h3>
-            <p>
-                Developed a hybrid model combining image dehazing with object detection for foggy environments.
-            </p>
-            <ul>
-                <li>Improved visibility before detection</li>
-                <li>Used YOLO + OpenCV</li>
-                <li>Enhanced detection accuracy</li>
-                <li>Applied preprocessing techniques</li>
-            </ul>
+            <p>Image dehazing + object detection model for foggy environments.</p>
+            <button class="cta-btn source-btn">Source Code</button>
         </div>
 
     </div>
 </section>
 
-<!-- CONTACT -->
+<!-- UPDATED CONTACT -->
 <section id="Contact">
     <h2>Contact Me</h2>
+    <p>Let's build something amazing together.</p>
 
     <div class="contact-details">
         <p><strong>Name:</strong> Valeti Abhishek Paul</p>
@@ -152,11 +129,11 @@
     </div>
 </section>
 
-<footer>
-    <p>© 2026 Valeti Abhishek Paul</p>
-</footer>
+<script src="index.js"></script>
 
-<script src="script.js"></script>
+<footer>
+    <p>© 2026 Valeti Abhishek Paul | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
