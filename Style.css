@@ -1,212 +1,103 @@
 body {
     margin: 0;
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: Arial;
     background: #0F172A;
     color: #F8FAFC;
-    scroll-behavior: smooth;
-}
-
-h1, h2, h3 {
-    margin: 0;
 }
 
 section {
     padding: 80px 10%;
 }
 
-
 #header {
-    background-color: rgba(0, 0, 0, 0.6);
+    background: rgba(0,0,0,0.6);
     position: sticky;
     top: 0;
-    z-index: 1000;
-    padding: 1em;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
+    padding: 20px;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
     margin-left: 20px;
 }
 
-nav ul li a {
+nav a {
+    color: white;
     text-decoration: none;
-    color: #F8FAFC;
-    position: relative;
 }
 
-nav ul li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0%;
-    height: 2px;
-    background-color: #F97316;
-    transition: 0.3s;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-}
-
-
+/* HERO */
 #Hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.hero-left {
-    animation: fadeSlide 1s ease forwards;
-    opacity: 0;
+.hero-right img {
+    width: 300px;
+    border-radius: 50%;
 }
 
-@keyframes fadeSlide {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.hero-left h2 {
-    font-size: 48px;
-    margin: 15px 0;
-}
-
-.hero-left h3 {
-    color: #94A3B8;
-}
-
+/* BUTTON */
 .cta-btn {
     display: inline-block;
-    padding: 12px 25px;
-    background-color: #EA580C;
+    padding: 10px 20px;
+    background: #F97316;
     color: white;
+    border-radius: 6px;
     text-decoration: none;
-    border-radius: 8px;
-    margin: 10px;
-    transition: 0.3s;
+    margin-top: 10px;
 }
 
-.cta-btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(249,115,22,0.4);
-}
-
-
-.hero-right img {
-    width: 380px;
-    border-radius: 50%;
-    animation: floatImage 4s ease-in-out infinite;
-}
-
-@keyframes floatImage {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0); }
-}
-
-
+/* SKILLS */
 .skills-list {
     display: flex;
     justify-content: space-around;
-    background-color: #1E293B;
+    background: #1E293B;
     padding: 20px;
-    border-radius: 8px;
 }
 
-.skills-list span {
-    transition: 0.3s;
-}
-
-.skills-list span:hover {
-    color: #F97316;
-    cursor: pointer;
-}
-
-
+/* PROJECTS */
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 30px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
 }
 
 .project-card {
-    background-color: #1E293B;
-    padding: 25px;
-    border-radius: 10px;
-    transition: 0.4s;
-}
-
-.project-card:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 15px 35px rgba(249,115,22,0.25);
-}
-
-
-.contact-form {
-    max-width: 500px;
-    margin: 30px auto 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 12px;
-    background-color: #1E293B;
-    border: none;
-    color: white;
-    border-radius: 6px;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: 2px solid #F97316;
-}
-
-.contact-form button {
-    background-color: #F97316;
-    border: none;
-    padding: 12px;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.contact-form button:hover {
-    background-color: #EA580C;
-}
-
-footer {
-    text-align: center;
+    background: #1E293B;
     padding: 20px;
-    background-color: #1E293B;
-    color: #94A3B8;
+    border-radius: 10px;
 }
 
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+}
 
-@media (max-width: 900px) {
-    #Hero {
+/* CONTACT */
+.contact-details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    #Hero{
         flex-direction: column;
         text-align: center;
     }
 
-    .projects-container {
+    .projects-container{
         grid-template-columns: 1fr;
     }
 }
