@@ -30,9 +30,26 @@ nav ul li {
     margin-left: 20px;
 }
 
-nav a {
+/* 🔥 NAV ANIMATION */
+nav ul li a {
     color: white;
     text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #F97316;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }
 
 #Hero {
@@ -75,13 +92,28 @@ nav a {
     background: #1E293B;
     padding: 25px;
     border-radius: 10px;
+    transition: 0.3s;
 }
 
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* CONTACT */
 .contact-details {
     text-align: center;
     margin-top: 20px;
 }
 
+/* FOOTER FIX */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1E293B;
+    color: #94A3B8;
+}
+
+/* MOBILE */
 @media(max-width:768px){
     #Hero{
         flex-direction: column;
