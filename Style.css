@@ -43,18 +43,18 @@ nav a {
 }
 
 .hero-right img {
-    width: 300px;
+    width: 280px;
     border-radius: 50%;
 }
 
 /* BUTTON */
 .cta-btn {
-    display: inline-block;
-    padding: 10px 20px;
     background: #F97316;
+    padding: 10px 20px;
     color: white;
     border-radius: 6px;
     text-decoration: none;
+    display: inline-block;
     margin-top: 10px;
 }
 
@@ -70,18 +70,24 @@ nav a {
 .projects-container {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 20px;
+    gap: 25px;
 }
 
 .project-card {
     background: #1E293B;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
 }
 
-.project-card a {
-    display: inline-block;
+.project-card ul {
     margin-top: 10px;
+    padding-left: 20px;
+}
+
+.project-card li {
+    font-size: 14px;
+    color: #CBD5F5;
+    margin-bottom: 5px;
 }
 
 /* CONTACT */
